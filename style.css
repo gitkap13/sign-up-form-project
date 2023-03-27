@@ -1,0 +1,79 @@
+* {
+  display: flex;
+}
+html {
+  --main-bg: hsl(210, 16%, 25%);
+  --signup-bg: hsl(210, 16%, 35%);
+  color: hsl(207, 18%, 90%);
+  font-family: "Courier New", Courier, monospace;
+}
+title {
+  display: none;
+}
+.main-wrapper {
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.banner-wrapper {
+  background-image: url(https://images.unsplash.com/photo-1506967613478-b029dba5d417?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: 0 0;
+  background-size: cover;
+  box-sizing: border-box;
+  min-width: 35vw;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.right-wrapper,
+.call-to-action {
+  flex-direction: column;
+}
+.call-to-action {
+  font-size: 24px;
+  padding: 50px;
+}
+.right-wrapper {
+  background-color: var(--main-bg);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sign-up {
+  height: 35%;
+  width: 90%;
+}
+
+label {
+  font-size: 10px;
+}
+input {
+  border-radius: 5px;
+}
+
+.fieldset {
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 740px;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--signup-bg);
+  overflow: auto;
+}
+.fields {
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  padding: 5px;
+  margin: 1rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+#submit {
+  height: 30px;
+  width: 100px;
+  flex: 0 0 100%;
+}
+.top-logo {
+  scale: 0.5;
+  flex-shrink: 1;
+}
